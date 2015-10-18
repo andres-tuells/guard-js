@@ -1,5 +1,5 @@
 
-var guardian = require('../guardian.js');
+var g = require('../guard.js');
 var stream = require('stream');
 var Transform = stream.Transform;
 var Readable = stream.Readable;
@@ -26,7 +26,7 @@ var thenable = function(value) {
 	};
 };
 
-var map = guardian()
+var map = g()
 	.when(isArray, function(x, fn) {return x.map(fn);})
 	.when(isNumber, function(x, fn) {return fn(x);})
 	.when(isString, function(x, fn) {return '' + fn(parseInt(x));})

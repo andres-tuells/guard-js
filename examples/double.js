@@ -1,5 +1,5 @@
 
-var guardian = require('../guardian.js');
+var g = require('../guard.js');
 
 
 
@@ -9,7 +9,7 @@ var isNumber = function(value) {return typeof value === 'number';};
 
 
 
-var double = guardian()
+var double = g()
 				.when(isNumber, function(x) {return 2 * x})
 				.when(isArray, function(x) {return x.concat(x)})
 				.any(function(x) {return x + x});

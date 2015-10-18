@@ -8,11 +8,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atuells-apium/guardianjs.git"
+    "url": "git+https://github.com/atuells-apium/guard-js.git"
   },
   "keywords": [
     "polymorphism",

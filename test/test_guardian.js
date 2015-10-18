@@ -1,5 +1,5 @@
 var assert = require('assert');
-var guardian = require('../guardian.js');
+var guardian = require('../guard.js');
 
 
 function sum(a, b, c) {return a + b + c;}
