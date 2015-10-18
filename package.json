@@ -1,0 +1,32 @@
+{
+  "name": "guard-js",
+  "version": "0.1.0",
+  "description": "Elixir style guards for js. Function polymorphysm",
+  "main": "guard.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atuells-apium/guardianjs.git"
+  },
+  "keywords": [
+    "polymorphism",
+    "guard"
+  ],
+  "author": "Andres Tuells <zentropia@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atuells-apium/guardianjs/issues"
+  },
+  "homepage": "https://github.com/atuells-apium/guardianjs#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.1"
+  }
+}
