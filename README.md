@@ -96,6 +96,7 @@ rs.push(null);
 var ws = new stream.Writable({
   objectMode: true,
   write: function(chunk, encoding, next) {
+    console.log(chunk);
     next();
   }
 });
