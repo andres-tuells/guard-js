@@ -60,7 +60,7 @@ We want this map work with differents types of collections, like arrays and stre
 
 ```javascript
 
-var g = require('../guard.js');
+var g = require('guard-js');
 
 'use strict';
 
