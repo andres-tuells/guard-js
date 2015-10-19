@@ -19,9 +19,9 @@ exports = module.exports = function() {
 	var self = function() {
 		for (var i = 0; i < self.__when__.length; i++) {
 			var c = self.__when__[i];
-			if (c.filter.apply(null, arguments))return c.fn.apply(null, arguments);
+			if (c.filter.apply(this, arguments))return c.fn.apply(this, arguments);
 		}
-		if (self.__any__)return self.__any__.apply(null, arguments);
+		if (self.__any__)return self.__any__.apply(this, arguments);
 		console.log(arguments);
 		throw new Error('No guard defined for this arguments');
 	};

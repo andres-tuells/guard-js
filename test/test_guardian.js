@@ -1,4 +1,4 @@
-var assert = require('assert');
+var assert = require('chai').assert;
 var guardian = require('../guard.js');
 
 
@@ -30,6 +30,16 @@ describe('Guardian#when', function() {
   it('All params in filter are passed', function() {
   	var g = guardian().when(function(a, b, c) {return 6 === sum(a, b, c);},first);
     assert(1 === g(1, 2, 3));
+  });
+
+  it('guard still works as method', function() {
+    var obj = new function(){this.a="A";}
+    function h(){
+      var f = function(){return this.a}; 
+      return function(){return f.apply(this,arguments)}
+    }
+    obj.g = guardian().when(t, function(){return this.a});
+    assert.equal(obj.g(),"A");
   });
 
 });

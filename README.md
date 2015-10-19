@@ -1,4 +1,4 @@
-# guardianjs
+# guard-js
 
 This library implement Elixir style guards for javascript. It allows polymorphism, 
 having diferent implemetations for diferent conditions.
